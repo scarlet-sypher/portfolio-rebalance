@@ -14,6 +14,6 @@ app.use("/api/portfolio", portfolioRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(process.env.PORT || 8000, () => {
+  console.log("Backend running on port", process.env.PORT);
 });
